@@ -1,0 +1,1 @@
+distance = [target.x, y + 160 - target.y * 0.75]

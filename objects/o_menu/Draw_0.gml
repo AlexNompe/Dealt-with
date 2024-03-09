@@ -1,0 +1,1 @@
+if global.menu_open draw_circle_color(336,192,24,c_white,c_white,c_white)
