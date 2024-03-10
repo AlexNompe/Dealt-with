@@ -6,5 +6,6 @@ bbox_height = bbox_bottom - bbox_top
 target = o_DEBUG_mouse
 
 distance = [0,0]
+mirror_alpha = 0
 
-max_reflection_distance = 240
+max_reflection_distance = 40

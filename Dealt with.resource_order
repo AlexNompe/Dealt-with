@@ -1,0 +1,16 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"o_DEBUG_mask","order":2,"path":"objects/o_DEBUG_mask/o_DEBUG_mask.yy",},
+    {"name":"snd_break_2","order":3,"path":"sounds/snd_break_2/snd_break_2.yy",},
+    {"name":"utils","order":1,"path":"scripts/utils/utils.yy",},
+    {"name":"snd_break_1","order":2,"path":"sounds/snd_break_1/snd_break_1.yy",},
+    {"name":"spr_red_mirror","order":1,"path":"sprites/spr_red_mirror/spr_red_mirror.yy",},
+    {"name":"o_DEBUG_mouse","order":1,"path":"objects/o_DEBUG_mouse/o_DEBUG_mouse.yy",},
+    {"name":"o_glass_brek","order":4,"path":"objects/o_glass_brek/o_glass_brek.yy",},
+    {"name":"snd_break_3","order":4,"path":"sounds/snd_break_3/snd_break_3.yy",},
+    {"name":"o_red_mirror","order":3,"path":"objects/o_red_mirror/o_red_mirror.yy",},
+    {"name":"spr_broken_glass","order":2,"path":"sprites/spr_broken_glass/spr_broken_glass.yy",},
+    {"name":"snd_break_0","order":1,"path":"sounds/snd_break_0/snd_break_0.yy",},
+  ],
+}
