@@ -3,6 +3,20 @@
 //	global.menu_open = !global.menu_open
 //	save()
 //}
+ambience = snd_howling_wind
+if !audio_is_playing(ambience)
+{
+	audio_play_sound(ambience,0,1)
+}
+
+if global.glass_broken == 0
+{
+	local_timer -= 1 * delta_time / 1000000
+}
+else
+{
+	local_timer += 5 * delta_time / 1000000
+}
 
 if global.menu_open != false
 {
@@ -11,10 +25,6 @@ if global.menu_open != false
 		if global.menu_timer > 0
 		{
 			global.menu_timer -= 1 * delta_time / 1000000
-		}
-		else
-		{
-			global.menu_timer = -1
 		}
 	}
 	
@@ -60,10 +70,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хахаха\n")
+			file_text_write_string(file, "Хаха\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Тебя легко провести, " + environment_get_variable("USERNAME") + "\n") 
-			file_text_write_string(file, "Возвращайся-")
+			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Гыыы")
 		}
 		file_text_close(file)
 		
@@ -72,10 +82,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хахаха\n")
+			file_text_write_string(file, "Хаха\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Тебя легко провести, " + environment_get_variable("USERNAME") + "\n") 
-			file_text_write_string(file, "Возвращайся-")
+			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Гыыы")
 		}
 		file_text_close(file)
 		
@@ -84,10 +94,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хахаха\n")
+			file_text_write_string(file, "Хаха\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Тебя легко провести, " + environment_get_variable("USERNAME") + "\n") 
-			file_text_write_string(file, "Возвращайся-")
+			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Гыыы")
 		}
 		file_text_close(file)
 		
@@ -96,10 +106,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хахаха\n")
+			file_text_write_string(file, "Хаха\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Тебя легко провести, " + environment_get_variable("USERNAME") + "\n") 
-			file_text_write_string(file, "Возвращайся-")
+			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Гыыы")
 		}
 		file_text_close(file)
 		
