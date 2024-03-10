@@ -31,7 +31,10 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"var_place","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"r_red","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"var_position","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"[0,0]","varType":4,},
+  ],
   "solid": false,
   "spriteId": {
     "name": "spr_red_mirror",

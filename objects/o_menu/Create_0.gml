@@ -30,3 +30,6 @@ global.glass_broken = 0
 global.menu_timer = 0
 
 global.player_moved = 0
+
+save_var_place = r_default
+save_var_position = [0,0]

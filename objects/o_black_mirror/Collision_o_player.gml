@@ -8,5 +8,10 @@ if !collided
 	
 	array_insert(global.broke, array_get_index(global.broke, array_last(global.broke)), glass)
 	
+	o_menu.save_var_place = var_place
+	o_menu.save_var_position = var_position
+	
+	o_menu.alarm[0] = 1
+	
 	collided = true
 }
