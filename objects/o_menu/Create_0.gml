@@ -19,9 +19,11 @@ default_button_size = [40, 24]
 
 break_sounds = [snd_break_0,snd_break_1,snd_break_2,snd_break_3]
 
-broke = []
+global.broke = []
 
 local_timer = 15
+
+scary_sound_went_off = false
 
 global.glass_broken = 0
 

@@ -1,2 +1,2 @@
-move_speed = 3
+move_speed = 2.4
 move = [0,0]

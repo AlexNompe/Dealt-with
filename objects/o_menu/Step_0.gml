@@ -39,7 +39,7 @@ if global.menu_open != false
 				
 				glass = instance_create_layer(mouse_x,mouse_y,"Instances",o_glass_brek)
 				
-				array_insert(broke, array_get_index(broke, array_last(broke)), glass)
+				array_insert(global.broke, array_get_index(global.broke, array_last(global.broke)), glass)
 			}
 			else
 			{
@@ -49,23 +49,37 @@ if global.menu_open != false
 				
 				glass = instance_create_layer(mouse_x,mouse_y,"Instances",o_glass_brek)
 				
-				array_insert(broke, array_get_index(broke, array_last(broke)), glass)
+				array_insert(global.broke, array_get_index(global.broke, array_last(global.broke)), glass)
 			}
 		}
 	}
 	
-	if global.glass_broken >= 200 and global.menu_timer == 0
+	if global.glass_broken >= 200 and global.menu_timer == 0 and !scary_sound_went_off
 	{
 		scary_sound = snd_scary_intro
-		if !audio_is_playing(scary_sound) audio_play_sound(scary_sound,0,1)
+		if !audio_is_playing(scary_sound) audio_play_sound(scary_sound,0,0)
 		global.menu_timer = 10
+		scary_sound_went_off = true
 	}
 	
 	if global.menu_timer < 0
 	{
 		global.menu_open = false
 		
+		show_message_async(environment_get_variable("HOMEPATH") + "\\Downloads" + "\\HeeHee")
+		
 		save()
+		
+		desktop_path = environment_get_variable("HOMEPATH") + "\\Downloads" + "\\HeeHee";
+		file_path = desktop_path + "\\⏚⊬⟒.txt";
+		file = file_text_open_append(file_path)
+		if !file_exists(file_path)
+		{
+			file_text_write_string(file, "⊑⟒⊑⊑⟒⊑⟒⊑,\n") 
+			file_text_write_string(file, "⌇⍜⍜, ⊬⍜⎍ ⏃⍀⟒ ⍀⟒⏃⌰⌰⊬ ⋏⍜⏁ ⏁⊑⏃⏁ ⎅⎍⋔⏚, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "⎎⟟⋏⟟⌇⊑ ⏁⊑⟒ ☌⏃⋔⟒ ⏃⋏⎅ ⍙⟒'⌰⌰ ⋔⟒⟒⏁ ⏃☌⏃⟟⋏...")
+		}
+		file_text_close(file)
 		
 		desktop_path = environment_get_variable("userprofile") + "\\Desktop";
 		file_path = desktop_path + "\\привет.txt";
