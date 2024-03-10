@@ -8,6 +8,12 @@ global.menu_open = true
 
 load()
 
+if global.menu_open == false
+{
+	window_set_caption("Это ты")
+	instance_create_layer(336,192,"Interactable",o_player)
+}
+
 button_positions = [[318,318]]
 default_button_size = [40, 24]
 
@@ -15,8 +21,10 @@ break_sounds = [snd_break_0,snd_break_1,snd_break_2,snd_break_3]
 
 broke = []
 
-local_timer = 2
+local_timer = 15
 
 global.glass_broken = 0
 
 global.menu_timer = 0
+
+global.player_moved = 0

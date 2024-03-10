@@ -16,10 +16,27 @@ if global.menu_open
 	{
 		draw_set_font(f_hello)
 		draw_set_halign(fa_middle)
-		draw_set_alpha(abs(local_timer/2))
+		draw_set_alpha(abs(local_timer/15))
 		draw_set_color(c_gray)
 		
 		draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Пожалуйста, нажми куда угодно", 24, 4000, 0.16, 0.16, 0)
+		
+		draw_set_color(c_white)
+		draw_set_alpha(1)
+		draw_set_halign(fa_left)
+	}
+}
+else
+{
+	draw_line_width_color(336,192-48,336,192+48,64,c_white,c_white)
+	if local_timer <= 0
+	{
+		draw_set_font(f_hello)
+		draw_set_halign(fa_middle)
+		draw_set_alpha(abs(local_timer/15))
+		draw_set_color(c_gray)
+		
+		draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Подвигайся!", 24, 4000, 0.16, 0.16, 0)
 		
 		draw_set_color(c_white)
 		draw_set_alpha(1)

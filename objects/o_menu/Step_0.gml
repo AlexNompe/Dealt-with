@@ -9,13 +9,13 @@ if !audio_is_playing(ambience)
 	audio_play_sound(ambience,0,1)
 }
 
-if global.glass_broken == 0
+if global.glass_broken == 0 and global.player_moved == 0
 {
 	local_timer -= 1 * delta_time / 1000000
 }
 else
 {
-	local_timer += 5 * delta_time / 1000000
+	local_timer += 10 * delta_time / 1000000
 }
 
 if global.menu_open != false
@@ -56,10 +56,12 @@ if global.menu_open != false
 	
 	if global.glass_broken >= 200 and global.menu_timer == 0
 	{
+		scary_sound = snd_scary_intro
+		if !audio_is_playing(scary_sound) audio_play_sound(scary_sound,0,1)
 		global.menu_timer = 10
 	}
 	
-	if (1 - global.menu_timer / 10) > 1
+	if global.menu_timer < 0
 	{
 		global.menu_open = false
 		
