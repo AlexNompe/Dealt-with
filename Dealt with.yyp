@@ -64,6 +64,7 @@
     {"id":{"name":"snd_break_3","path":"sounds/snd_break_3/snd_break_3.yy",},},
     {"id":{"name":"o_white_mirror","path":"objects/o_white_mirror/o_white_mirror.yy",},},
     {"id":{"name":"o_red_mirror","path":"objects/o_red_mirror/o_red_mirror.yy",},},
+    {"id":{"name":"r_black","path":"rooms/r_black/r_black.yy",},},
     {"id":{"name":"spr_plushy","path":"sprites/spr_plushy/spr_plushy.yy",},},
     {"id":{"name":"spr_collision_diagonal1x2","path":"sprites/spr_collision_diagonal1x2/spr_collision_diagonal1x2.yy",},},
     {"id":{"name":"spr_player_move_front","path":"sprites/spr_player_move_front/spr_player_move_front.yy",},},
@@ -79,6 +80,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"r_default","path":"rooms/r_default/r_default.yy",},},
     {"roomId":{"name":"r_red","path":"rooms/r_red/r_red.yy",},},
+    {"roomId":{"name":"r_black","path":"rooms/r_black/r_black.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

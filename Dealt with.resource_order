@@ -29,6 +29,7 @@
     {"name":"snd_break_3","order":4,"path":"sounds/snd_break_3/snd_break_3.yy",},
     {"name":"o_white_mirror","order":13,"path":"objects/o_white_mirror/o_white_mirror.yy",},
     {"name":"o_red_mirror","order":3,"path":"objects/o_red_mirror/o_red_mirror.yy",},
+    {"name":"r_black","order":2,"path":"rooms/r_black/r_black.yy",},
     {"name":"spr_plushy","order":10,"path":"sprites/spr_plushy/spr_plushy.yy",},
     {"name":"spr_collision_diagonal1x2","order":5,"path":"sprites/spr_collision_diagonal1x2/spr_collision_diagonal1x2.yy",},
     {"name":"spr_player_move_front","order":1,"path":"sprites/spr_player_move_front/spr_player_move_front.yy",},
