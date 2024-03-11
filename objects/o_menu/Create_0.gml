@@ -1,3 +1,5 @@
+randomize()
+
 window_set_fullscreen(true)
 
 window_set_caption("Хихихи")
@@ -5,6 +7,8 @@ window_set_caption("Хихихи")
 window_set_color(c_black)
 
 global.menu_open = true
+
+global.flag_meany = false
 
 load()
 

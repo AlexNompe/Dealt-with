@@ -19,7 +19,8 @@ if global.menu_open
 		draw_set_alpha(abs(local_timer/15))
 		draw_set_color(c_gray)
 		
-		draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Пожалуйста, нажми куда угодно", 24, 4000, 0.16, 0.16, 0)
+		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Пожалуйста, нажми куда угодно", 24, 4000, 0.16, 0.16, 0)
+		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Сволочь", 24, 4000, 0.16, 0.16, 0)
 		
 		draw_set_color(c_white)
 		draw_set_alpha(1)
@@ -36,7 +37,8 @@ else
 		draw_set_alpha(abs(local_timer/15))
 		draw_set_color(c_gray)
 		
-		draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Подвигайся!", 24, 4000, 0.16, 0.16, 0)
+		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Подвигайся! WASD", 24, 4000, 0.16, 0.16, 0)
+		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Идиот, тебе направо", 24, 4000, 0.16, 0.16, 0)
 		
 		draw_set_color(c_white)
 		draw_set_alpha(1)

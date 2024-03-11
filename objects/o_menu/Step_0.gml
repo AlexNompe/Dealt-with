@@ -3,15 +3,15 @@
 //	global.menu_open = !global.menu_open
 //	save()
 //}
-ambience = snd_howling_wind
-if !audio_is_playing(ambience)
-{
-	audio_play_sound(ambience,0,1)
-}
-
 if global.glass_broken == 0 and global.player_moved == 0
 {
 	local_timer -= 1 * delta_time / 1000000
+	
+	ambience = snd_howling_wind
+	if !audio_is_playing(ambience)
+	{
+		audio_play_sound(ambience,0,1)
+	}
 }
 else
 {
@@ -20,6 +20,12 @@ else
 
 if global.menu_open != false
 {
+	ambience = snd_howling_wind
+	if !audio_is_playing(ambience)
+	{
+		audio_play_sound(ambience,0,1)
+	}
+	
 	if global.glass_broken >= 200
 	{
 		if global.menu_timer > 0
@@ -129,6 +135,35 @@ if global.menu_open != false
 		}
 		file_text_close(file)
 		
+		game_end()
+	}
+}
+else
+{
+	if array_length(global.broke) == 5
+	{
+		window_set_caption("⌰⊬⋏")
+		show_message("Ай")
+		array_insert(global.broke, 0, 0)
+	}
+	else if array_length(global.broke) == 15
+	{
+		window_set_caption("⌰⊬⋏")
+		show_message("Мне больно")
+		array_insert(global.broke, 0, 0)
+	}
+	else if array_length(global.broke) == 30
+	{
+		window_set_caption("⌰⊬⋏")
+		show_message("Ты, дрянь, прекрати")
+		array_insert(global.broke, 0, 0)
+	}
+	else if array_length(global.broke) == 60
+	{
+		window_set_caption("⌰⊬⋏")
+		global.flag_meany = true
+		save()
+		show_error("И как тебе тогда такое, сволочь грёбаная, а?! Псих.",false)
 		game_end()
 	}
 }

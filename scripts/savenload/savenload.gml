@@ -4,6 +4,7 @@ function save(file = "save.ini"){
 	ini = ini_open(file)
 	
 	ini_write_real("save", 0, global.menu_open)
+	ini_write_real("save", 1, global.flag_meany)
 	
 	ini_close()
 }
@@ -14,6 +15,7 @@ function load(file = "save.ini"){
 	if ini_section_exists("save")
 	{
 		global.menu_open = ini_read_real("save",0,1)
+		global.flag_meany = ini_read_real("save",1,0)
 	}
 	else save()
 }
