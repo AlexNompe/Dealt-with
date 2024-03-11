@@ -1,0 +1,1 @@
+if collided and !place_meeting(x,y,o_player) collided = false

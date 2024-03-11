@@ -29,7 +29,7 @@ if global.menu_open
 }
 else
 {
-	draw_line_width_color(336,192-48,336,192+48,64,c_white,c_white)
+	if room == 0 draw_line_width_color(336,192-48,336,192+48,64,c_white,c_white)
 	if local_timer <= 0
 	{
 		draw_set_font(f_hello)

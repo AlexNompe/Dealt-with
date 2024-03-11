@@ -142,28 +142,36 @@ else
 {
 	if array_length(global.broke) == 5
 	{
+		cap = window_get_caption()
 		window_set_caption("⌰⊬⋏")
 		show_message("Ай")
+		window_set_caption(cap)
 		array_insert(global.broke, 0, 0)
 	}
 	else if array_length(global.broke) == 15
 	{
+		cap = window_get_caption()
 		window_set_caption("⌰⊬⋏")
 		show_message("Мне больно")
+		window_set_caption(cap)
 		array_insert(global.broke, 0, 0)
 	}
 	else if array_length(global.broke) == 30
 	{
+		cap = window_get_caption()
 		window_set_caption("⌰⊬⋏")
-		show_message("Ты, дрянь, прекрати")
+		show_message("Дрянь прекрати")
+		window_set_caption(cap)
 		array_insert(global.broke, 0, 0)
 	}
 	else if array_length(global.broke) == 60
 	{
+		cap = window_get_caption()
 		window_set_caption("⌰⊬⋏")
 		global.flag_meany = true
 		save()
 		show_error("И как тебе тогда такое, сволочь грёбаная, а?! Псих.",false)
 		game_end()
+		window_set_caption(cap)
 	}
 }

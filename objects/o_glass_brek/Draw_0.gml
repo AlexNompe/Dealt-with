@@ -1,4 +1,4 @@
-shake = [random_range(-4,4)*global.glass_timer,random_range(-4,4)*global.glass_timer]
+shake = [random_range(-4,4)*global.glass_timer+camera_get_view_x(view_camera[0]),random_range(-4,4)*global.glass_timer+camera_get_view_y(view_camera[0])]
 
 for (i = 0; i < floor(random_count); i++)
 {

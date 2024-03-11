@@ -17,6 +17,13 @@ if global.menu_open == false
 	window_set_caption("Это ты")
 	instance_create_layer(336,192,"Interactable",o_player)
 }
+else
+{
+	if random_range(1,100) <= 50
+	{
+		room_goto(r_red)
+	}
+}
 
 button_positions = [[318,318]]
 default_button_size = [40, 24]
