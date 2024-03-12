@@ -35,5 +35,17 @@ if instance_exists(o_player)
 		{
 			camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),384*3)
 		}
+		else if o_player.y >= 384 * 4 and o_player.y < 384 * 5
+		{
+			camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),384*4)
+		}
+		else if o_player.y >= 384 * 5 and o_player.y < 384 * 6
+		{
+			camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),384*5)
+		}
+		else if o_player.y >= 384 * 6 and o_player.y < 384 * 7
+		{
+			camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),384*6)
+		}
 	}
 }

@@ -13,3 +13,5 @@ max_reflection_distance = y
 collided = false
 
 break_sounds = [snd_break_0,snd_break_1,snd_break_2,snd_break_3]
+
+works = true

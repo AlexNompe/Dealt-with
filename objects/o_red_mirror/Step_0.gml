@@ -6,3 +6,5 @@ if global.menu_open == true
 {
 	instance_destroy()
 }
+
+image_speed = works

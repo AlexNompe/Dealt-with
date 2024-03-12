@@ -1,4 +1,4 @@
-if !collided
+if !collided and works
 {
 	with o_menu
 	{
