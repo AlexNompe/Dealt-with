@@ -10,18 +10,22 @@ global.menu_open = true
 
 global.flag_meany = false
 
+global.stage = 0
+
 load()
 
 if global.menu_open == false
 {
-	window_set_caption("Это ты")
-	instance_create_layer(336,192,"Interactable",o_player)
-}
-else
-{
-	if random_range(1,100) <= 50
+	if global.stage == 0
 	{
-		room_goto(r_red)
+		window_set_caption("Это ты")
+		instance_create_layer(336,192,"Interactable",o_player)
+	}
+	else if global.stage == 1
+	{
+		if !global.flag_meany window_set_caption("Ты со мной")
+		else window_set_caption("идиотина")
+		instance_create_layer(336,192+384,"Interactable",o_player)
 	}
 }
 

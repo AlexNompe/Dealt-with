@@ -27,7 +27,7 @@ if global.menu_open
 		draw_set_halign(fa_left)
 	}
 }
-else
+else if global.stage == 0
 {
 	if room == 0 draw_line_width_color(336,192-48,336,192+48,64,c_white,c_white)
 	if local_timer <= 0
@@ -39,6 +39,23 @@ else
 		
 		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Подвигайся! WASD", 24, 4000, 0.16, 0.16, 0)
 		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Идиот, тебе направо", 24, 4000, 0.16, 0.16, 0)
+		
+		draw_set_color(c_white)
+		draw_set_alpha(1)
+		draw_set_halign(fa_left)
+	}
+}
+else if global.stage == 1
+{
+	if local_timer <= 0
+	{
+		draw_set_font(f_hello)
+		draw_set_halign(fa_middle)
+		draw_set_alpha(abs(local_timer/15))
+		draw_set_color(c_gray)
+		
+		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+384+cos(current_time/400)*4,"Тебя вообще то видно :p", 24, 4000, 0.16, 0.16, 0)
+		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+384+cos(current_time/400)*4,"Ты так и будешь читать все эти грёбаные диалоги?", 24, 4000, 0.16, 0.16, 0)
 		
 		draw_set_color(c_white)
 		draw_set_alpha(1)
