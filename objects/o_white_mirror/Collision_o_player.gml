@@ -1,5 +1,7 @@
 if !collided
 {
+	go_through()
+	
 	with o_menu
 	{
 		save_var_place = other.var_place

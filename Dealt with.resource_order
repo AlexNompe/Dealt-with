@@ -46,6 +46,8 @@
     {"name":"snd_click","order":7,"path":"sounds/snd_click/snd_click.yy",},
     {"name":"spr_collision_diagonal1x2","order":4,"path":"sprites/spr_collision_diagonal1x2/spr_collision_diagonal1x2.yy",},
     {"name":"spr_player_move_front","order":1,"path":"sprites/spr_player_move_front/spr_player_move_front.yy",},
+    {"name":"spr_giant_mirror","order":17,"path":"sprites/spr_giant_mirror/spr_giant_mirror.yy",},
+    {"name":"o_giant_mirror","order":18,"path":"objects/o_giant_mirror/o_giant_mirror.yy",},
     {"name":"o_object","order":10,"path":"objects/o_object/o_object.yy",},
     {"name":"spr_collision_diagonal1x1","order":5,"path":"sprites/spr_collision_diagonal1x1/spr_collision_diagonal1x1.yy",},
     {"name":"spr_broken_glass","order":2,"path":"sprites/spr_broken_glass/spr_broken_glass.yy",},

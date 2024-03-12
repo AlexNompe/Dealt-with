@@ -27,6 +27,12 @@ if global.menu_open == false
 		else window_set_caption("идиотина")
 		instance_create_layer(336,192+384,"Interactable",o_player)
 	}
+	else if global.stage == 2
+	{
+		if !global.flag_meany window_set_caption("Сломанный разум")
+		else window_set_caption("так тебе и надо")
+		//instance_create_layer(336,192+384,"Interactable",o_player)
+	}
 }
 
 button_positions = [[318,318]]

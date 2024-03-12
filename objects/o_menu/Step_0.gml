@@ -175,3 +175,81 @@ else
 		window_set_caption(cap)
 	}
 }
+
+if instance_exists(o_player) and global.stage == 1 and o_player.x >= 672 and o_player.x < 672*2 and o_player.y >= 384 and o_player.y < 384*2
+{
+	if o_player.x >= 880
+	{
+		desktop_path = environment_get_variable("HOMEPATH") + "\\Downloads" + "\\HeeHee";
+		file_path = desktop_path + "\\⎎⏃⍀⟒⍙⟒⌰⌰.txt";
+		file = file_text_open_append(file_path)
+		if !file_exists(file_path)
+		{
+			file_text_write_string(file, "⊬⍜⎍'⍙⟒ ☊⍜⋔⟒ ⎎⏃⍀,\n") 
+			file_text_write_string(file, "⟟'⋔ ⌇⍜⍀⍀⊬ ⎎⍜⍀ ⏁⊑⟒ ⌰⏃☊☍ ⍜⎎ ☊⍜⋏⏁⟒⋏⏁ ⏚⎍⏁...\n") 
+			file_text_write_string(file, "⏁⊑⏃⋏☍ ⊬⍜⎍\n")
+			for (i = 0; i < 38097; i++)
+			{
+				file_text_write_string(file, "\n")
+			}
+			file_text_write_string(file, "No LORE???\n")
+		}
+		file_text_close(file)
+		
+		desktop_path = environment_get_variable("userprofile") + "\\Desktop";
+		file_path = desktop_path + "\\всё ли у тебя хорошо.txt";
+		file = file_text_open_append(file_path)
+		if !file_exists(file_path)
+		{
+			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "АХАХАА\n")
+			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
+			file_text_write_string(file, "ТЫ ПСИИИХ")
+		}
+		file_text_close(file)
+		
+		desktop_path = environment_get_variable("HOMEPATH") + "\\Desktop";
+		file_path = desktop_path + "\\всё ли у тебя хорошо.txt";
+		file = file_text_open_append(file_path)
+		if !file_exists(file_path)
+		{
+			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "АХАХАА\n")
+			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
+			file_text_write_string(file, "ТЫ ПСИИИХ")
+		}
+		file_text_close(file)
+		
+		desktop_path = environment_get_variable("HOMEPATH") + "\\Documents";
+		file_path = desktop_path + "\\всё ли у тебя хорошо.txt";
+		file = file_text_open_append(file_path)
+		if !file_exists(file_path)
+		{
+			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "АХАХАА\n")
+			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
+			file_text_write_string(file, "ТЫ ПСИИИХ")
+		}
+		file_text_close(file)
+		
+		desktop_path = "D:\\Users\\AlexNompe\\Desktop";
+		file_path = desktop_path + "\\всё ли у тебя хорошо.txt";
+		file = file_text_open_append(file_path)
+		if !file_exists(file_path)
+		{
+			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "АХАХАА\n")
+			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
+			file_text_write_string(file, "ТЫ ПСИИИХ")
+		}
+		file_text_close(file)
+		
+		global.stage = 2
+		
+		show_message_async(environment_get_variable("HOMEPATH") + "\\Downloads" + "\\HeeHee" + ", " + "again")
+		
+		save()
+		
+		game_end()
+	}
+}

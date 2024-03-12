@@ -81,6 +81,8 @@
     {"id":{"name":"snd_click","path":"sounds/snd_click/snd_click.yy",},},
     {"id":{"name":"spr_collision_diagonal1x2","path":"sprites/spr_collision_diagonal1x2/spr_collision_diagonal1x2.yy",},},
     {"id":{"name":"spr_player_move_front","path":"sprites/spr_player_move_front/spr_player_move_front.yy",},},
+    {"id":{"name":"spr_giant_mirror","path":"sprites/spr_giant_mirror/spr_giant_mirror.yy",},},
+    {"id":{"name":"o_giant_mirror","path":"objects/o_giant_mirror/o_giant_mirror.yy",},},
     {"id":{"name":"o_object","path":"objects/o_object/o_object.yy",},},
     {"id":{"name":"spr_collision_diagonal1x1","path":"sprites/spr_collision_diagonal1x1/spr_collision_diagonal1x1.yy",},},
     {"id":{"name":"t_tiles","path":"tilesets/t_tiles/t_tiles.yy",},},
