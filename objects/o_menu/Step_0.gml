@@ -178,8 +178,16 @@ else
 
 if instance_exists(o_player) and global.stage == 1 and o_player.x >= 672 and o_player.x < 672*2 and o_player.y >= 384 and o_player.y < 384*2
 {
+	voices = snd_voices
+	if !audio_is_playing(voices)
+	{
+		audio_play_sound(voices,0,1)
+	}
+	
 	if o_player.x >= 880
 	{
+		audio_play_sound(break_sounds[random_range(0, array_length(break_sounds))],1,0,1,0,random_range(90,110)/100)
+		
 		desktop_path = environment_get_variable("HOMEPATH") + "\\Downloads" + "\\HeeHee";
 		file_path = desktop_path + "\\⎎⏃⍀⟒⍙⟒⌰⌰.txt";
 		file = file_text_open_append(file_path)

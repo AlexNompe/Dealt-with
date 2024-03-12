@@ -45,6 +45,7 @@
     {"id":{"name":"spr_waypoint","path":"sprites/spr_waypoint/spr_waypoint.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"snd_break_1","path":"sounds/snd_break_1/snd_break_1.yy",},},
+    {"id":{"name":"snd_voices","path":"sounds/snd_voices/snd_voices.yy",},},
     {"id":{"name":"f_hello","path":"fonts/f_hello/f_hello.yy",},},
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},},
     {"id":{"name":"snd_walkie_1","path":"sounds/snd_walkie_1/snd_walkie_1.yy",},},

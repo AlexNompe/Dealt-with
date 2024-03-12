@@ -7,7 +7,7 @@ surface_set_target(surf)
 draw_clear_alpha(c_black,0)
 //gpu_set_blendmode(bm_subtract)
 draw_set_color(c_white)
-if instance_exists(target) draw_sprite_ext(target.sprite_index, 0, distance[0] - bbox_left, distance[1] - bbox_top, 1, 1, 0, true, mirror_alpha)
+if instance_exists(target) draw_sprite_ext(target.sprite_index, 0, distance[0] - bbox_left, distance[1] - bbox_top, -target.image_xscale, 1, 0, true, 1)
 //draw_circle(mouse_x - (336 - 120), mouse_y - (192 - 120), 32, c_black)
 //gpu_set_blendmode(bm_normal)
 

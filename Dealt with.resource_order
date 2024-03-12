@@ -13,6 +13,7 @@
     {"name":"spr_waypoint","order":13,"path":"sprites/spr_waypoint/spr_waypoint.yy",},
     {"name":"o_player","order":5,"path":"objects/o_player/o_player.yy",},
     {"name":"snd_break_1","order":2,"path":"sounds/snd_break_1/snd_break_1.yy",},
+    {"name":"snd_voices","order":11,"path":"sounds/snd_voices/snd_voices.yy",},
     {"name":"spr_tiles","order":6,"path":"sprites/spr_tiles/spr_tiles.yy",},
     {"name":"snd_walkie_1","order":10,"path":"sounds/snd_walkie_1/snd_walkie_1.yy",},
     {"name":"spr_red_mirror","order":1,"path":"sprites/spr_red_mirror/spr_red_mirror.yy",},

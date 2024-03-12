@@ -12,6 +12,8 @@ global.flag_meany = false
 
 global.stage = 0
 
+global.flag_secret_holder = false
+
 load()
 
 if global.menu_open == false
@@ -54,3 +56,7 @@ global.player_moved = 0
 
 save_var_place = r_default
 save_var_position = [0,0]
+
+if global.stage == 2 local_timer = 10
+
+shown = false
