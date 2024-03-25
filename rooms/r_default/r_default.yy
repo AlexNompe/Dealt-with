@@ -87,7 +87,7 @@
     {"name":"inst_109FBC4D","path":"rooms/r_default/r_default.yy",},
     {"name":"inst_6C17FEAD","path":"rooms/r_default/r_default.yy",},
     {"name":"inst_18481C5","path":"rooms/r_default/r_default.yy",},
-    {"name":"inst_32692B29","path":"rooms/r_default/r_default.yy",},
+    {"name":"inst_12CEA4DB","path":"rooms/r_default/r_default.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -195,7 +195,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18481C5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_red_mirror","path":"objects/o_red_mirror/o_red_mirror.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_red_mirror","path":"objects/o_red_mirror/o_red_mirror.yy",},"propertyId":{"name":"var_position","path":"objects/o_red_mirror/o_red_mirror.yy",},"value":"[976,944]",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":720.0,"y":592.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_32692B29","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_giant_mirror","path":"objects/o_giant_mirror/o_giant_mirror.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1008.0,"y":384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_12CEA4DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_giant_mirror","path":"objects/o_giant_mirror/o_giant_mirror.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1008.0,"y":384.0,},
       ],"layers":[],"properties":[
         {"name":"g_RipplesPosition","type":0,"value":"0",},
         {"name":"g_RipplesPosition","type":0,"value":"0",},

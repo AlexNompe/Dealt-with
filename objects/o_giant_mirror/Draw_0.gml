@@ -4,10 +4,12 @@ surface_set_target(surf)
 
 //layerID = layer_get_id("Instances")
 
-draw_clear_alpha(c_black,0)
+//draw_clear_alpha(c_black,0)
 //gpu_set_blendmode(bm_subtract)
 draw_set_color(c_white)
+gpu_set_colorwriteenable(1,1,1,0)
 if instance_exists(target) draw_sprite_ext(target.sprite_index, 0, distance[0] - bbox_left, distance[1] - bbox_top, -target.image_xscale, 1, 0, true, 1)
+gpu_set_colorwriteenable(1,1,1,1)
 //draw_circle(mouse_x - (336 - 120), mouse_y - (192 - 120), 32, c_black)
 //gpu_set_blendmode(bm_normal)
 
@@ -15,6 +17,8 @@ surface_reset_target()
 
 //layer_set_visible(layerID, 0)
 draw_self()
+
+if instance_exists(target) draw_sprite_ext(target.sprite_index, 0, distance[0] - bbox_left, distance[1] - bbox_top, -target.image_xscale, 1, 0, true, 1)
 
 if instance_exists(target) and depth >= target.depth draw_surface(surf, bbox_left, bbox_top)
 

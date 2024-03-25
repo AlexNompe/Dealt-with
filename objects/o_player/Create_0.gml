@@ -1,4 +1,5 @@
 move_speed = 2
+move_multiplier = 1
 move = [0,0]
 interaction_move = [0,0]
 

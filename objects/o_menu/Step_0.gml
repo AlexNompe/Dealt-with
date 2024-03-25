@@ -21,9 +21,14 @@ else
 if global.menu_open != false
 {
 	ambience = snd_howling_wind
+	voices = snd_voices
 	if !audio_is_playing(ambience)
 	{
 		audio_play_sound(ambience,0,1)
+	}
+	if !audio_is_playing(voices)
+	{
+		audio_play_sound(voices,0,1,0.25)
 	}
 	
 	if global.glass_broken >= 200
@@ -38,7 +43,7 @@ if global.menu_open != false
 	{
 		if global.glass_broken < 200
 		{
-			if global.glass_broken < 10-1
+			if global.glass_broken < 20-1
 			{
 				global.glass_broken += 1
 				audio_play_sound(break_sounds[random_range(0, array_length(break_sounds))],1,0,1,0,random_range(90,110)/100)
@@ -92,10 +97,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "Haha\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
-			file_text_write_string(file, "Гыыы")
+			file_text_write_string(file, "You are so funny, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Yeee")
 		}
 		file_text_close(file)
 		
@@ -104,10 +109,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "Haha\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
-			file_text_write_string(file, "Гыыы")
+			file_text_write_string(file, "You are so funny, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Yeee")
 		}
 		file_text_close(file)
 		
@@ -116,10 +121,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "Haha\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
-			file_text_write_string(file, "Гыыы")
+			file_text_write_string(file, "You are so funny, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Yeee")
 		}
 		file_text_close(file)
 		
@@ -128,10 +133,10 @@ if global.menu_open != false
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
+			file_text_write_string(file, "Haha\n")
 			file_text_write_string(file, "...\n")
-			file_text_write_string(file, "Ты такой глупенький, " + environment_get_variable("USERNAME") + ".\n") 
-			file_text_write_string(file, "Гыыы")
+			file_text_write_string(file, "You are so funny, " + environment_get_variable("USERNAME") + ".\n") 
+			file_text_write_string(file, "Yeee")
 		}
 		file_text_close(file)
 		
@@ -140,39 +145,61 @@ if global.menu_open != false
 }
 else
 {
-	if array_length(global.broke) == 5
+	if !global.flag_meany
 	{
-		cap = window_get_caption()
-		window_set_caption("⌰⊬⋏")
-		show_message("Ай")
-		window_set_caption(cap)
-		array_insert(global.broke, 0, 0)
+		if array_length(global.broke) == 10
+		{
+			cap = window_get_caption()
+			window_set_caption("⌰⊬⋏")
+			show_message("ouch")
+			window_set_caption(cap)
+			array_insert(global.broke, 0, 0)
+		}
+		else if array_length(global.broke) == 30
+		{
+			cap = window_get_caption()
+			window_set_caption("⌰⊬⋏")
+			show_message("It hurts")
+			window_set_caption(cap)
+			array_insert(global.broke, 0, 0)
+		}
+		else if array_length(global.broke) == 60
+		{
+			cap = window_get_caption()
+			window_set_caption("⌰⊬⋏")
+			show_message("Stop")
+			window_set_caption(cap)
+			array_insert(global.broke, 0, 0)
+		}
+		else if array_length(global.broke) == 90
+		{
+			cap = window_get_caption()
+			window_set_caption("⌰⊬⋏")
+			show_message("Stopw")
+			window_set_caption(cap)
+			array_insert(global.broke, 0, 0)
+		}
+		else if array_length(global.broke) == 120
+		{
+			cap = window_get_caption()
+			window_set_caption("⌰⊬⋏")
+			global.flag_meany = true
+			save()
+			show_error("How do you feel about that, asshole?! Psycopath.",false)
+			game_end()
+			window_set_caption(cap)
+		}
 	}
-	else if array_length(global.broke) == 15
+	else
 	{
-		cap = window_get_caption()
-		window_set_caption("⌰⊬⋏")
-		show_message("Мне больно")
-		window_set_caption(cap)
-		array_insert(global.broke, 0, 0)
-	}
-	else if array_length(global.broke) == 30
-	{
-		cap = window_get_caption()
-		window_set_caption("⌰⊬⋏")
-		show_message("Дрянь прекрати")
-		window_set_caption(cap)
-		array_insert(global.broke, 0, 0)
-	}
-	else if array_length(global.broke) == 60
-	{
-		cap = window_get_caption()
-		window_set_caption("⌰⊬⋏")
-		global.flag_meany = true
-		save()
-		show_error("И как тебе тогда такое, сволочь грёбаная, а?! Псих.",false)
-		game_end()
-		window_set_caption(cap)
+		if array_length(global.broke) == 120
+		{
+			cap = window_get_caption()
+			window_set_caption("⌰⊬⋏")
+			show_message("You")
+			window_set_caption(cap)
+			array_insert(global.broke, 0, 0)
+		}
 	}
 }
 
@@ -209,10 +236,9 @@ if instance_exists(o_player) and global.stage == 1 and o_player.x >= 672 and o_p
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
-			file_text_write_string(file, "АХАХАА\n")
-			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
-			file_text_write_string(file, "ТЫ ПСИИИХ")
+			file_text_write_string(file, "haha\n")
+			file_text_write_string(file, "AHAHAA\n")
+			file_text_write_string(file, "HAHAHAHAHAHAHAHAHAA\n") 
 		}
 		file_text_close(file)
 		
@@ -221,10 +247,9 @@ if instance_exists(o_player) and global.stage == 1 and o_player.x >= 672 and o_p
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
-			file_text_write_string(file, "АХАХАА\n")
-			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
-			file_text_write_string(file, "ТЫ ПСИИИХ")
+			file_text_write_string(file, "haha\n")
+			file_text_write_string(file, "AHAHAA\n")
+			file_text_write_string(file, "HAHAHAHAHAHAHAHAHAA\n") 
 		}
 		file_text_close(file)
 		
@@ -233,10 +258,9 @@ if instance_exists(o_player) and global.stage == 1 and o_player.x >= 672 and o_p
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
-			file_text_write_string(file, "АХАХАА\n")
-			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
-			file_text_write_string(file, "ТЫ ПСИИИХ")
+			file_text_write_string(file, "haha\n")
+			file_text_write_string(file, "AHAHAA\n")
+			file_text_write_string(file, "HAHAHAHAHAHAHAHAHAA\n") 
 		}
 		file_text_close(file)
 		
@@ -245,10 +269,9 @@ if instance_exists(o_player) and global.stage == 1 and o_player.x >= 672 and o_p
 		file = file_text_open_append(file_path)
 		if !file_exists(file_path)
 		{
-			file_text_write_string(file, "Хаха\n")
-			file_text_write_string(file, "АХАХАА\n")
-			file_text_write_string(file, "ХААААХАХАХАХАХАХАХАА\n") 
-			file_text_write_string(file, "ТЫ ПСИИИХ")
+			file_text_write_string(file, "haha\n")
+			file_text_write_string(file, "AHAHAA\n")
+			file_text_write_string(file, "HAHAHAHAHAHAHAHAHAA\n") 
 		}
 		file_text_close(file)
 		

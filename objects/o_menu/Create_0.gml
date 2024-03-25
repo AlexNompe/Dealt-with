@@ -2,7 +2,7 @@ randomize()
 
 window_set_fullscreen(true)
 
-window_set_caption("Хихихи")
+window_set_caption("Hehehe")
 
 window_set_color(c_black)
 
@@ -20,19 +20,19 @@ if global.menu_open == false
 {
 	if global.stage == 0
 	{
-		window_set_caption("Это ты")
+		window_set_caption("This is YOU")
 		instance_create_layer(336,192,"Interactable",o_player)
 	}
 	else if global.stage == 1
 	{
-		if !global.flag_meany window_set_caption("Ты со мной")
-		else window_set_caption("идиотина")
+		if !global.flag_meany window_set_caption("YOU are with me")
+		else window_set_caption("idiot")
 		instance_create_layer(336,192+384,"Interactable",o_player)
 	}
 	else if global.stage == 2
 	{
-		if !global.flag_meany window_set_caption("Сломанный разум")
-		else window_set_caption("так тебе и надо")
+		if !global.flag_meany window_set_caption("Is it that bad?")
+		else window_set_caption("go shit yourself")
 		//instance_create_layer(336,192+384,"Interactable",o_player)
 	}
 }

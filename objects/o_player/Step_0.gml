@@ -1,9 +1,11 @@
 if !o_dialog_system.is_dialog move = [keyboard_check(ord("D")) - keyboard_check(ord("A")), keyboard_check(ord("S")) - keyboard_check(ord("W"))]
 else move = [0,0]
 
+if abs(move[0]) + abs(move[1]) != 0 move_multiplier = sqrt((abs(move[0]) + abs(move[1])))/(abs(move[0]) + abs(move[1]))
+
 collision = o_collision
 
-move_and_collide(move[0] * move_speed * delta_time / 10000 / 2, move[1] * move_speed * delta_time / 10000 / 2, collision)
+move_and_collide(move[0] * move_speed * delta_time / 10000 / 2 * move_multiplier, move[1] * move_speed * delta_time / 10000 / 2 * move_multiplier, collision)
 
 if keyboard_check(ord("D")) or keyboard_check(ord("A")) or keyboard_check(ord("S")) or keyboard_check(ord("W")) 
 {

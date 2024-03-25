@@ -19,8 +19,8 @@ if global.menu_open
 		draw_set_alpha(abs(local_timer/15))
 		draw_set_color(c_gray)
 		
-		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Пожалуйста, нажми куда угодно", 24, 4000, 0.16, 0.16, 0)
-		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Сволочь", 24, 4000, 0.16, 0.16, 0)
+		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Click anywhere", 24, 4000, 0.16, 0.16, 0)
+		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"nit", 24, 4000, 0.16, 0.16, 0)
 		
 		draw_set_color(c_white)
 		draw_set_alpha(1)
@@ -37,8 +37,8 @@ else if global.stage == 0
 		draw_set_alpha(abs(local_timer/15))
 		draw_set_color(c_gray)
 		
-		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Подвигайся! WASD", 24, 4000, 0.16, 0.16, 0)
-		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Идиот, тебе направо", 24, 4000, 0.16, 0.16, 0)
+		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Move! WASD", 24, 4000, 0.16, 0.16, 0)
+		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+cos(current_time/400)*4,"Fuck you, go right", 24, 4000, 0.16, 0.16, 0)
 		
 		draw_set_color(c_white)
 		draw_set_alpha(1)
@@ -54,8 +54,8 @@ else if global.stage == 1
 		draw_set_alpha(abs(local_timer/15))
 		draw_set_color(c_gray)
 		
-		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+384+cos(current_time/400)*4,"Тебя вообще то видно :p, иди вниз", 24, 4000, 0.16, 0.16, 0)
-		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+384+cos(current_time/400)*4,"Ты так и будешь читать все эти грёбаные диалоги?", 24, 4000, 0.16, 0.16, 0)
+		if !global.flag_meany draw_text_ext_transformed(336+sin(current_time/400)*4,352+384+cos(current_time/400)*4,"You know I can see you :p, go down", 24, 4000, 0.16, 0.16, 0)
+		else draw_text_ext_transformed(336+sin(current_time/400)*4,352+384+cos(current_time/400)*4,"Don't you have anything better to do then reading dialog?", 24, 4000, 0.16, 0.16, 0)
 		
 		draw_set_color(c_white)
 		draw_set_alpha(1)
@@ -69,7 +69,7 @@ else if global.stage == 2
 	draw_set_color(c_black)
 	
 	if !global.flag_meany draw_text_ext_transformed(336,96,"Dealt with", 24, 4000, 1, 1, 0)
-	else draw_text_ext_transformed(336,96,"Наглость", 24, 4000, 1, 1, 0)
+	else draw_text_ext_transformed(336,96,"No", 24, 4000, 1, 1, 0)
 	if !global.flag_meany draw_text_ext_transformed(336,192,"by AlexNompe and Resota0_0", 24, 4000, 0.16, 0.16, 0)
 	
 	draw_set_halign(fa_middle)
@@ -86,11 +86,11 @@ else if global.stage == 2
 		
 		if global.flag_meany and local_timer <= -10 and local_timer > -15 and !shown 
 		{
-			choice = show_question("Ты ещё здесь?")
+			choice = show_question("Are you still there?")
 			shown = true
 			if choice == 1
 			{
-				choice = show_question("Сволочь?")
+				choice = show_question("Nit?")
 				shown = true
 				
 				if choice == 1 
@@ -99,7 +99,7 @@ else if global.stage == 2
 					
 					save()
 					
-					show_error("Пошёл нахрен, под каким углом ко мне ты относился, под таким и я отнесусь.",false)
+					show_error("Shut up",false)
 					
 					game_end()
 				}
